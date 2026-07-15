@@ -1,4 +1,162 @@
 {
 	"version": 5,
-	"rows": []
+	"rows": [
+		{
+			"id": "EhpYt2OxmZI_5Jq9y",
+			"description": "Money",
+			"tags": [
+				"Money"
+			],
+			"quantity": 1,
+			"equipped": true,
+			"children": [
+				{
+					"id": "ESg-PntLIAsHOdOVz",
+					"description": "Kernian Krona",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "e4sLP7qdFgrIp2pdi",
+							"description": "Krona",
+							"legality_class": "4",
+							"tags": [
+								"Kernian Krona",
+								"Money"
+							],
+							"base_value": "1",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 1,
+								"extended_value": 1,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 1,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "EL9-dWZIuvZLyderm",
+					"description": "Kalmari Marka",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "e_b3FiQARQAFi7kE3",
+							"description": "Marka ",
+							"legality_class": "4",
+							"tags": [
+								"Kalmari Mark",
+								"Money"
+							],
+							"base_value": "5",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 5,
+								"extended_value": 5,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eGjf2TNjPuB8Yyv35",
+							"description": "Vere",
+							"legality_class": "4",
+							"tags": [
+								"Kalmari Mark",
+								"Money"
+							],
+							"base_value": "0.2",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0.2,
+								"extended_value": 0.2,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 5.2,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"id": "E-ax--uzbyTtuAfKJ",
+					"description": "Gris Lira",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "eC5TDCM_HO7h-8IcP",
+							"description": "Gris Lira",
+							"legality_class": "4",
+							"tags": [
+								"Gris Lira",
+								"Money"
+							],
+							"base_value": "0.25",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0.25,
+								"extended_value": 0.25,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 0.25,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
+				}
+			],
+			"calc": {
+				"value": 0,
+				"extended_value": 6.45,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "E5Z6O1QSM8atyceD-",
+			"description": "Weapons",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"id": "EHk4D6cLUniZsFYIL",
+			"description": "Ammunition",
+			"legality_class": "4",
+			"quantity": 1,
+			"equipped": true,
+			"calc": {
+				"value": 0,
+				"extended_value": 0,
+				"weight": "0 lb",
+				"extended_weight": "0 lb"
+			}
+		}
+	]
 }

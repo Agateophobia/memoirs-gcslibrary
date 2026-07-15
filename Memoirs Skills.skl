@@ -1,4 +1,579 @@
 {
 	"version": 5,
-	"rows": []
+	"rows": [
+		{
+			"id": "sXpn4dyJKh5H4Xcto",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sIGnp4W_M8XBodpEH"
+			},
+			"name": "Hidden Lore",
+			"reference": "B199,MA57",
+			"tags": [
+				"Knowledge"
+			],
+			"replacements": {
+				"Subject": "Witches"
+			},
+			"specialization": "Witches",
+			"difficulty": "iq/a",
+			"points": 1
+		},
+		{
+			"id": "sYu86pYWjmNJUQqp4",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sm0SBaOMUXyix9RSy"
+			},
+			"name": "Engineer",
+			"reference": "B190",
+			"tags": [
+				"Design",
+				"Engineer",
+				"Invention"
+			],
+			"specialization": "Automata",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"specialization": "Automata",
+					"modifier": -6
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "mathematics"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "applied"
+						}
+					}
+				]
+			},
+			"tech_level": "5+1",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Engineer",
+				"specialization": "Clockwork",
+				"modifier": -4,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			}
+		},
+		{
+			"id": "sLskqnOsyDoWyrLOg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sKTkr5zOJhh2hRT9Y"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Repair"
+			],
+			"specialization": "Automata",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"specialization": "Pneumotonic",
+					"modifier": -2
+				},
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Automata",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "5+1",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			}
+		},
+		{
+			"id": "s1MJbtp0ERY70YJQ3",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sm0SBaOMUXyix9RSy"
+			},
+			"name": "Engineer",
+			"reference": "B190",
+			"tags": [
+				"Design",
+				"Engineer",
+				"Invention",
+				"Occult"
+			],
+			"specialization": "Pneumotonic",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"specialization": "Pneumotonic",
+					"modifier": -6
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "pneumology"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "pneumotonics"
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "mathematics"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "applied"
+						}
+					}
+				]
+			},
+			"tech_level": "5+1",
+			"defaulted_from": {
+				"type": "skill",
+				"name": "Engineer",
+				"specialization": "Clockwork",
+				"modifier": -4,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			}
+		},
+		{
+			"id": "svhP68r-XA9vv136B",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sKTkr5zOJhh2hRT9Y"
+			},
+			"name": "Mechanic",
+			"reference": "B207",
+			"tags": [
+				"Maintenance",
+				"Occult",
+				"Repair"
+			],
+			"specialization": "Pneumotonic",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"specialization": "Automata",
+					"modifier": -2
+				},
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Engineer",
+					"specialization": "Pneumotonic",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"tech_level": "5+1",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			}
+		},
+		{
+			"id": "sXBPuw-H5tGPXc0Sg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sUMX5WJHqMbYwXdJG"
+			},
+			"name": "Engineer",
+			"reference": "B190",
+			"tags": [
+				"Design",
+				"Engineer",
+				"Invention"
+			],
+			"specialization": "Clockwork",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mechanic",
+					"specialization": "Clockwork",
+					"modifier": -6
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"when_tl": {
+					"compare": "at_least",
+					"qualifier": 5
+				},
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "mathematics"
+						},
+						"specialization": {
+							"compare": "is",
+							"qualifier": "applied"
+						}
+					}
+				]
+			},
+			"tech_level": "5+1",
+			"points": 1
+		},
+		{
+			"id": "skB_ftyLu1uNPbNks",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sa_ZE2rnayiRCI376"
+			},
+			"name": "Pneumology",
+			"reference": "B174",
+			"tags": [
+				"Medical",
+				"Natural Science",
+				"Occult"
+			],
+			"specialization": "Pneumopathics",
+			"difficulty": "iq/vh",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "First Aid",
+					"modifier": -11
+				},
+				{
+					"type": "skill",
+					"name": "Esoteric Medicine",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Physician",
+					"modifier": -6
+				},
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"tech_level": "5+1",
+			"points": 1
+		},
+		{
+			"id": "sn0igPDN0wvp3rQ0U",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sa_ZE2rnayiRCI376"
+			},
+			"name": "Pneumology",
+			"reference": "B174",
+			"tags": [
+				"Natural Science",
+				"Occult"
+			],
+			"specialization": "Pneumotonics",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"tech_level": "5+1",
+			"points": 1
+		},
+		{
+			"id": "sEsy0w3svtC7RH5fI",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sa_ZE2rnayiRCI376"
+			},
+			"name": "Pneumology",
+			"reference": "B174",
+			"tags": [
+				"Arts",
+				"Entertainment",
+				"Natural Science",
+				"Occult"
+			],
+			"specialization": "Pneumophonics",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Musical Composition",
+					"modifier": -4
+				}
+			],
+			"tech_level": "5+1",
+			"points": 1
+		},
+		{
+			"id": "syisMGn5pYhnHuJIa",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sn9Y6a4YbUfsQ8GxY"
+			},
+			"name": "Hazardous Materials",
+			"reference": "B199",
+			"tags": [
+				"Technical"
+			],
+			"replacements": {
+				"Specialization": "Pneumological"
+			},
+			"specialization": "Pneumological",
+			"difficulty": "iq/a",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"tech_level": "5+1",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			}
+		},
+		{
+			"id": "sUoH-lRLiFVIv00Wg",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sZhLALSTNRZIxx-GS"
+			},
+			"name": "Musical Instrument",
+			"reference": "B211",
+			"tags": [
+				"Arts",
+				"Entertainment",
+				"Occult"
+			],
+			"replacements": {
+				"Specialty": "Pneumophone"
+			},
+			"specialization": "Pneumophone",
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "sK7dOfOp4bAGIiyHx",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "s88gTPKTH8WGPQqDI"
+			},
+			"name": "Expert Skill",
+			"reference": "B193,MA56",
+			"tags": [
+				"Knowledge",
+				"Natural Science",
+				"Scholarly"
+			],
+			"specialization": "Vermin",
+			"difficulty": "iq/h",
+			"points": 1
+		},
+		{
+			"id": "sE6OYU0hidHguqJoU",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sPNoFjMzWUsnwn7Pv"
+			},
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"tags": [
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "Vermin Catchers",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			}
+		},
+		{
+			"id": "s2ijLz4FgrKpV430I",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sPNoFjMzWUsnwn7Pv"
+			},
+			"name": "Savoir-Faire",
+			"reference": "B218,MA59",
+			"tags": [
+				"Knowledge",
+				"Social"
+			],
+			"specialization": "Spellbreakers",
+			"difficulty": "iq/e",
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -4
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			}
+		},
+		{
+			"id": "sI9jZNUMtp4yBBAAP",
+			"source": {
+				"library": "richardwilkes/gcs_master_library",
+				"path": "Basic Set/Basic Set Skills.skl",
+				"id": "sRzoU2_LS2s4r51LA"
+			},
+			"name": "History",
+			"reference": "B200",
+			"tags": [
+				"Humanities",
+				"Occult",
+				"Social Sciences"
+			],
+			"replacements": {
+				"Specialty": "Specialty"
+			},
+			"specialization": "Tyven",
+			"difficulty": "iq/h",
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "History",
+					"specialization": "Kalmari",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Literature",
+					"modifier": -4
+				},
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			],
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 4,
+				"adjusted_level": 4,
+				"points": -4
+			}
+		}
+	]
 }
