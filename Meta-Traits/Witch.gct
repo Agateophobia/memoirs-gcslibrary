@@ -1,0 +1,160 @@
+{
+	"version": 5,
+	"id": "B7DZ1u5Sklnnli-Yj",
+	"traits": [
+		{
+			"id": "TGmr4a-DDVMjZvch0",
+			"name": "Witch",
+			"container_type": "meta_trait",
+			"children": [
+				{
+					"id": "t_O6xwN9EkdL8RorV",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tmpWRV6eHZjNeEvlU"
+					},
+					"name": "Precognition",
+					"reference": "B77,P68,PSI16",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Supernatural"
+					],
+					"modifiers": [
+						{
+							"id": "mIBvx0hgNFcN-DdE3",
+							"name": "Passive Only",
+							"reference": "P69",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mA0DVmTndbaJMzruP",
+							"name": "One Event",
+							"reference": "B77",
+							"local_notes": "@Event Type@",
+							"cost_adj": "-40%",
+							"disabled": true
+						},
+						{
+							"id": "m0xWGIEjbIcdZDwln",
+							"name": "Dreaming",
+							"reference": "PSI16",
+							"local_notes": "Combined with Active Only or Can't See Own Death",
+							"cost_adj": "-20%",
+							"disabled": true
+						},
+						{
+							"id": "mNG16aclXL2X8mVVB",
+							"name": "Dreaming",
+							"reference": "PSI16",
+							"cost_adj": "-70%",
+							"disabled": true
+						},
+						{
+							"id": "mLawiT_y22ve5h_F5",
+							"name": "Directed",
+							"reference": "P68",
+							"cost_adj": "100%",
+							"disabled": true
+						},
+						{
+							"id": "mSs5o3ODPniCmPaZI",
+							"name": "Can't See Own Death",
+							"reference": "B77",
+							"cost_adj": "-60%",
+							"disabled": true
+						},
+						{
+							"id": "mf7DgrGizPtfvs31Q",
+							"name": "Pneumological",
+							"local_notes": "Your Pneuma-10 applies to the active use of this trait.",
+							"cost_adj": "+20%"
+						},
+						{
+							"id": "m8jtnz23YpBB3iybl",
+							"name": "Active Only",
+							"reference": "P69",
+							"cost_adj": "-60%",
+							"disabled": true
+						}
+					],
+					"base_points": 25,
+					"calc": {
+						"points": 30
+					}
+				},
+				{
+					"id": "to14HrHlNVllGbaco",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tkH3Z500lfDbdUbtv"
+					},
+					"name": "Phantom Voices",
+					"reference": "B148",
+					"local_notes": "In any situation that the GM feels is stressful, he may roll 3d. On a 6 or less, you hear voices. The GM will always roll whenever you miss a Fright Check or make the roll exactly, and whenever you fail a self-control roll for another stress-related disadvantage.",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mlhOQpAPKVtV3bJ2x",
+							"name": "Annoying",
+							"reference": "B148",
+							"cost_adj": "-5",
+							"disabled": true
+						},
+						{
+							"id": "myn4y0uuY3yZ46nZe",
+							"name": "Disturbing",
+							"reference": "B148",
+							"cost_adj": "-10"
+						},
+						{
+							"id": "mOg92NlvUuTftznQ1",
+							"name": "Diabolical",
+							"reference": "B148",
+							"cost_adj": "-15",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tCqZwFFnC4SHiyp_y",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set/Basic Set Traits.adq",
+						"id": "tkchRxKpwct0fHH7U"
+					},
+					"name": "Social Stigma (Second-Class Citizen)",
+					"reference": "B155",
+					"local_notes": "You belong to a group that receives fewer rights and privileges than “full citizens.”",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -5,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from others except those of your own kind",
+							"amount": -1
+						}
+					],
+					"calc": {
+						"points": -5
+					}
+				}
+			],
+			"calc": {
+				"points": 15
+			}
+		}
+	]
+}
