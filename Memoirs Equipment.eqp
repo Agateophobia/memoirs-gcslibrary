@@ -123,11 +123,62 @@
 						"weight": "0 lb",
 						"extended_weight": "0 lb"
 					}
+				},
+				{
+					"id": "ELuJ-78ysuwUOCxTY",
+					"description": "Sonnerort Thal",
+					"legality_class": "4",
+					"quantity": 1,
+					"equipped": true,
+					"children": [
+						{
+							"id": "ecEq9Nj5dD0opJUMy",
+							"description": "Thal",
+							"legality_class": "4",
+							"tags": [
+								"Sonnenort Thal",
+								"Money"
+							],
+							"base_value": "3",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 3,
+								"extended_value": 3,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						},
+						{
+							"id": "eyR83fdGN8OuWAgft",
+							"description": "Weil",
+							"legality_class": "4",
+							"tags": [
+								"Sonnenort Thal",
+								"Money"
+							],
+							"base_value": "0.25",
+							"quantity": 1,
+							"equipped": true,
+							"calc": {
+								"value": 0.25,
+								"extended_value": 0.25,
+								"weight": "0 lb",
+								"extended_weight": "0 lb"
+							}
+						}
+					],
+					"calc": {
+						"value": 0,
+						"extended_value": 3.25,
+						"weight": "0 lb",
+						"extended_weight": "0 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 6.45,
+				"extended_value": 9.7,
 				"weight": "0 lb",
 				"extended_weight": "0 lb"
 			}
@@ -138,11 +189,531 @@
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
+			"children": [
+				{
+					"id": "ejL0J9ui339nN699M",
+					"description": "Toinen Teräs '04, .50 TT",
+					"tech_level": "5",
+					"legality_class": "3",
+					"tags": [
+						"Firearms",
+						"Rifle"
+					],
+					"base_value": "450",
+					"base_weight": "9 lb",
+					"weapons": [
+						{
+							"id": "WOB3w_gddKUTbuj_U",
+							"sv": 1,
+							"damage": {
+								"type": "pi+",
+								"base": "5d+1"
+							},
+							"strength": "10†",
+							"accuracy": "3",
+							"range": "470/3,000",
+							"rate_of_fire": "1",
+							"shots": "1(3)",
+							"bulk": "-6",
+							"recoil": "3",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Musket"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Machine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Submachine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Gun!"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Grenade Launcher"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Gyroc"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Anti-Armor Weapon"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "5d+1 pi+"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 450,
+						"extended_value": 450,
+						"weight": "9 lb",
+						"extended_weight": "9 lb"
+					}
+				},
+				{
+					"id": "etwPezJd5QHheJQY3",
+					"description": "Sonnerort IWF Lidia, .56 Caplock",
+					"local_notes": "Malf 16.",
+					"tech_level": "5",
+					"legality_class": "3",
+					"tags": [
+						"Firearms",
+						"Rifle"
+					],
+					"base_value": "250",
+					"base_weight": "8 lb",
+					"weapons": [
+						{
+							"id": "Wjc22qUbhVUEB5eBD",
+							"sv": 1,
+							"damage": {
+								"type": "pi+",
+								"base": "5d-1"
+							},
+							"strength": "9†",
+							"accuracy": "2",
+							"range": "195/1,990",
+							"rate_of_fire": "1",
+							"shots": "5(10i)",
+							"bulk": "-5",
+							"recoil": "3",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Musket"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Machine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Submachine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Gun!"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Grenade Launcher"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Gyroc"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Anti-Armor Weapon"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "5d-1 pi+"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 250,
+						"extended_value": 250,
+						"weight": "8 lb",
+						"extended_weight": "8 lb"
+					}
+				},
+				{
+					"id": "eBbSgZkb71vK4hnPM",
+					"description": "Sonnerort IWF Lidke, .56 Caplock",
+					"local_notes": "No lanyard ring. Malf 16.",
+					"tech_level": "5",
+					"legality_class": "3",
+					"tags": [
+						"Firearms",
+						"Pistol"
+					],
+					"base_value": "175",
+					"base_weight": "4.5 lb",
+					"weapons": [
+						{
+							"id": "WyxLHNmz2S7jKf2nD",
+							"sv": 1,
+							"damage": {
+								"type": "pi+",
+								"base": "4d"
+							},
+							"strength": "11",
+							"accuracy": "1",
+							"range": "170/1,730",
+							"rate_of_fire": "1",
+							"shots": "5(10i)",
+							"bulk": "-3",
+							"recoil": "3",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Musket"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Machine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Submachine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Gun!"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Grenade Launcher"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Gyroc"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Anti-Armor Weapon"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "4d pi+"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 175,
+						"extended_value": 175,
+						"weight": "4.5 lb",
+						"extended_weight": "4.5 lb"
+					}
+				}
+			],
 			"calc": {
 				"value": 0,
-				"extended_value": 0,
+				"extended_value": 875,
 				"weight": "0 lb",
-				"extended_weight": "0 lb"
+				"extended_weight": "21.5 lb"
 			}
 		},
 		{
@@ -151,11 +722,50 @@
 			"legality_class": "4",
 			"quantity": 1,
 			"equipped": true,
+			"children": [
+				{
+					"id": "eldgvB3nHObRjP6nL",
+					"description": ".50 Toinen Teräs (13x64mmR)",
+					"tags": [
+						"Ammunition",
+						"Cartridge"
+					],
+					"base_value": "1.4",
+					"base_weight": "0.11 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 1.4,
+						"extended_value": 1.4,
+						"weight": "0.11 lb",
+						"extended_weight": "0.11 lb"
+					}
+				},
+				{
+					"id": "eoz4-G1WYt5qvxJhM",
+					"description": ".56 Caplock",
+					"local_notes": "Powder and shot.",
+					"tags": [
+						"Ammunition",
+						"Powder & Shot"
+					],
+					"base_value": "0.4",
+					"base_weight": "0.047 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0.4,
+						"extended_value": 0.4,
+						"weight": "0.047 lb",
+						"extended_weight": "0.047 lb"
+					}
+				}
+			],
 			"calc": {
 				"value": 0,
-				"extended_value": 0,
+				"extended_value": 1.8,
 				"weight": "0 lb",
-				"extended_weight": "0 lb"
+				"extended_weight": "0.157 lb"
 			}
 		}
 	]
