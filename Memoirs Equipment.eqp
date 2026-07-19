@@ -199,11 +199,11 @@
 						"Firearms",
 						"Rifle"
 					],
-					"base_value": "450",
+					"base_value": "475",
 					"base_weight": "9 lb",
 					"weapons": [
 						{
-							"id": "WOB3w_gddKUTbuj_U",
+							"id": "Wv2uEg1n9aKVAc4rX",
 							"sv": 1,
 							"damage": {
 								"type": "pi+",
@@ -356,8 +356,8 @@
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 450,
-						"extended_value": 450,
+						"value": 475,
+						"extended_value": 475,
 						"weight": "9 lb",
 						"extended_weight": "9 lb"
 					}
@@ -372,11 +372,11 @@
 						"Firearms",
 						"Rifle"
 					],
-					"base_value": "250",
+					"base_value": "400",
 					"base_weight": "8 lb",
 					"weapons": [
 						{
-							"id": "Wjc22qUbhVUEB5eBD",
+							"id": "WiJthJgtP84r2-I5I",
 							"sv": 1,
 							"damage": {
 								"type": "pi+",
@@ -529,8 +529,8 @@
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 250,
-						"extended_value": 250,
+						"value": 400,
+						"extended_value": 400,
 						"weight": "8 lb",
 						"extended_weight": "8 lb"
 					}
@@ -545,11 +545,11 @@
 						"Firearms",
 						"Pistol"
 					],
-					"base_value": "175",
+					"base_value": "340",
 					"base_weight": "4.5 lb",
 					"weapons": [
 						{
-							"id": "WyxLHNmz2S7jKf2nD",
+							"id": "WkDNuyTe2DQCPZftt",
 							"sv": 1,
 							"damage": {
 								"type": "pi+",
@@ -702,8 +702,8 @@
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 175,
-						"extended_value": 175,
+						"value": 340,
+						"extended_value": 340,
 						"weight": "4.5 lb",
 						"extended_weight": "4.5 lb"
 					}
@@ -711,7 +711,7 @@
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 875,
+				"extended_value": 1215,
 				"weight": "0 lb",
 				"extended_weight": "21.5 lb"
 			}
