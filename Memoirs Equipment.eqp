@@ -199,11 +199,11 @@
 						"Firearms",
 						"Rifle"
 					],
-					"base_value": "475",
+					"base_value": "570",
 					"base_weight": "9 lb",
 					"weapons": [
 						{
-							"id": "Wv2uEg1n9aKVAc4rX",
+							"id": "WoQy58zjM3aRsz7yz",
 							"sv": 1,
 							"damage": {
 								"type": "pi+",
@@ -356,8 +356,8 @@
 					"quantity": 1,
 					"equipped": true,
 					"calc": {
-						"value": 475,
-						"extended_value": 475,
+						"value": 570,
+						"extended_value": 570,
 						"weight": "9 lb",
 						"extended_weight": "9 lb"
 					}
@@ -707,13 +707,185 @@
 						"weight": "4.5 lb",
 						"extended_weight": "4.5 lb"
 					}
+				},
+				{
+					"id": "eSVSos7MM-Ii7JqET",
+					"description": "Sonnerort IWF Rahel, .395 Krähe",
+					"tech_level": "5+1",
+					"legality_class": "3",
+					"tags": [
+						"Firearms",
+						"Pistol"
+					],
+					"base_value": "600",
+					"base_weight": "2.2 lb",
+					"weapons": [
+						{
+							"id": "WaK4sTHuSIXRjAKzB",
+							"sv": 1,
+							"damage": {
+								"type": "pi+",
+								"base": "2d-1"
+							},
+							"strength": "9",
+							"accuracy": "2",
+							"range": "95/1,080",
+							"rate_of_fire": "3",
+							"shots": "6(3i)",
+							"bulk": "-2",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Musket"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Machine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Submachine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Gun!"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Grenade Launcher"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Gyroc"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Anti-Armor Weapon"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "2d-1 pi+"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 600,
+						"extended_value": 600,
+						"weight": "2.2 lb",
+						"extended_weight": "2.2 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 1215,
+				"extended_value": 1910,
 				"weight": "0 lb",
-				"extended_weight": "21.5 lb"
+				"extended_weight": "23.7 lb"
 			}
 		},
 		{
@@ -726,6 +898,7 @@
 				{
 					"id": "eldgvB3nHObRjP6nL",
 					"description": ".50 Toinen Teräs (13x64mmR)",
+					"legality_class": "4",
 					"tags": [
 						"Ammunition",
 						"Cartridge"
@@ -745,6 +918,7 @@
 					"id": "eoz4-G1WYt5qvxJhM",
 					"description": ".56 Caplock",
 					"local_notes": "Powder and shot.",
+					"legality_class": "4",
 					"tags": [
 						"Ammunition",
 						"Powder & Shot"
@@ -759,13 +933,32 @@
 						"weight": "0.047 lb",
 						"extended_weight": "0.047 lb"
 					}
+				},
+				{
+					"id": "e5sedqd5il3isub6m",
+					"description": ".395 Krähe Rimfire (10.4x20mmR)",
+					"legality_class": "4",
+					"tags": [
+						"Ammunition",
+						"Cartridge"
+					],
+					"base_value": "0.4",
+					"base_weight": "0.033 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0.4,
+						"extended_value": 0.4,
+						"weight": "0.033 lb",
+						"extended_weight": "0.033 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 1.8,
+				"extended_value": 2.2,
 				"weight": "0 lb",
-				"extended_weight": "0.157 lb"
+				"extended_weight": "0.19 lb"
 			}
 		}
 	]
