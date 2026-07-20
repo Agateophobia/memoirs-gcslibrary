@@ -1,0 +1,616 @@
+{
+	"version": 5,
+	"id": "BUtC-VKTa3gCHc88t",
+	"traits": [
+		{
+			"id": "TjjXGViiF-I9o_p7V",
+			"name": "Automata",
+			"container_type": "meta_trait",
+			"children": [
+				{
+					"id": "t4MaYXykSo5c6YBw0",
+					"name": "Eight-hour energy reserve, Refuel 3 times per day",
+					"reference": "B263",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t_4fhbXRFJX662UIQ",
+					"name": "No fatigue points, Don't spend fatigue points",
+					"reference": "B263",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "t3WB1S1OvECYNo8Fk",
+					"name": "Wears out instead of aging",
+					"reference": "B263",
+					"tags": [
+						"Physical"
+					],
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"id": "TL13T6dMangE2tMbH",
+					"name": "Advantages",
+					"children": [
+						{
+							"id": "t64eu_4BFDOJvGm2F",
+							"name": "Injury Tolerance",
+							"reference": "B60",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mwzy4qdLn0MJHl6nE",
+									"name": "Diffuse",
+									"reference": "B60",
+									"local_notes": "Immune to crippling injuries. Brain, Vitals and Groin cannot be targeted. Most foes cannot slam or grapple you (GM's decision). Do not bleed. Unaffected by blood-borne toxins. Immune to attacks that rely on cutting off blood to part of your body. Impaling and piercing attacks of any size never do more than 1 HP of injury, regardless of penetrating damage. Other attacks never do more than 2 HP of injury. Exception: Area-effect, cone, and explosion attacks cause normal injury",
+									"cost_adj": "100",
+									"disabled": true
+								},
+								{
+									"id": "mj8AYsi1_smVJKuYL",
+									"name": "Homogenous",
+									"reference": "B60",
+									"local_notes": "Altered wound modifiers: imp & pi++ are x1/2, pi+ is x1/3, pi is x1/5, pi- is x1/10",
+									"cost_adj": "40",
+									"disabled": true
+								},
+								{
+									"id": "mh7ajALra92ou83_K",
+									"name": "No Blood",
+									"reference": "B61",
+									"local_notes": "Do not bleed, unaffected by blood-borne toxins, immune to attacks that rely on cutting off blood to part of your body",
+									"cost_adj": "5"
+								},
+								{
+									"id": "m16Yu19b7u6rMtCMJ",
+									"name": "No Brain",
+									"reference": "B61",
+									"local_notes": "Brain cannot be targeted. Blows to the skull or eye are treated like blows to the face, except that eye injury can still cripple the eye",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "m8XjWPO2pNCvP9p1q",
+									"name": "No Eyes",
+									"reference": "B61",
+									"local_notes": "Eyes may not be targeted. Immune to blinding attacks",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mktDKVrPvICmh-tjf",
+									"name": "No Head",
+									"reference": "B61",
+									"local_notes": "Skull, Brain and Face cannot be targeted",
+									"cost_adj": "7",
+									"disabled": true
+								},
+								{
+									"id": "m2mCgbUBulOkNiNhe",
+									"name": "No Neck",
+									"reference": "B61",
+									"local_notes": "Neck may not be targeted and cannot be decapitated, choked or strangled",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mVsg9W3Ci3_LRO0MI",
+									"name": "No Vitals",
+									"reference": "B61",
+									"local_notes": "Attacks to the Vitals or Groin are treated as attacks to the Torso",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mJc4EdgbdtiwhwBgg",
+									"name": "Unliving",
+									"reference": "B61",
+									"local_notes": "Altered wound modifiers: imp & pi++ are x1, pi+ is x1/2, pi is x1/3, pi- is x1/5",
+									"cost_adj": "20"
+								}
+							],
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "tuMyTyMiikyUZ7FrQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "teRggYn926_I1YeWO"
+							},
+							"name": "High Pain Threshold",
+							"reference": "B59",
+							"local_notes": "Never suffer shock penalties when injured",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"base_points": 10,
+							"features": [
+								{
+									"type": "conditional_modifier",
+									"situation": "on all HT rolls to avoid knockdown and stunning",
+									"amount": 3
+								},
+								{
+									"type": "conditional_modifier",
+									"situation": "to resist torture",
+									"amount": 3
+								}
+							],
+							"calc": {
+								"points": 10
+							}
+						},
+						{
+							"id": "t8OrT8tX5wdJLJ3vO",
+							"name": "Resistant",
+							"reference": "B81",
+							"tags": [
+								"Advantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mRaUBCf2NyvnZNgx1",
+									"name": "Metabolic Hazards",
+									"reference": "B80",
+									"cost_adj": "30"
+								},
+								{
+									"id": "mp-OihU3L-vttPm-I",
+									"name": "@Common: Poison, Sickness, etc.@",
+									"reference": "B81",
+									"cost_adj": "15",
+									"disabled": true
+								},
+								{
+									"id": "mh9Nz4Uoi-V8IwwCy",
+									"name": "@Occasional: Disease, Ingested Poison, etc.@",
+									"reference": "B81",
+									"cost_adj": "10",
+									"disabled": true
+								},
+								{
+									"id": "m5Q0e9ing2c2Eknxe",
+									"name": "@Rare: Acceleration, Altitude Sickness, Bends, Seasickness, Space Sickness, Nanomachines, etc.@",
+									"reference": "B81",
+									"cost_adj": "5",
+									"disabled": true
+								},
+								{
+									"id": "mbg9Gv1pLtyfGFzBo",
+									"name": "Immunity",
+									"reference": "B81",
+									"cost_adj": "x1"
+								},
+								{
+									"id": "mDUdPzgQAShjTIWjK",
+									"name": "+8 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_adj": "x0.5",
+									"disabled": true
+								},
+								{
+									"id": "mcgptI8TevBxRMrhY",
+									"name": "+3 to all HT rolls to resist",
+									"reference": "B81",
+									"cost_adj": "x0.33",
+									"disabled": true
+								}
+							],
+							"round_down": true,
+							"calc": {
+								"points": 30
+							}
+						},
+						{
+							"id": "t13021Km6wxSrsedg",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tUX_zxoB4sWyeNpHi"
+							},
+							"name": "Doesn't Breathe",
+							"reference": "B49",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mV7Kut2XvlQvsl9jQ",
+									"name": "Gills",
+									"reference": "B49",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "m38BPCrXd59DDlukZ",
+									"name": "Gills",
+									"reference": "B49",
+									"local_notes": "Suffocates in air",
+									"cost_adj": "-20",
+									"disabled": true
+								},
+								{
+									"id": "mp8AxGYc6WvXICdqM",
+									"name": "Oxygen Absorption",
+									"reference": "B49",
+									"cost_adj": "-25%",
+									"disabled": true
+								},
+								{
+									"id": "m_AN7_nKfC_83-Ak1",
+									"name": "Oxygen Storage",
+									"reference": "B49",
+									"local_notes": "Can hold breath 25 times as long as normal",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mnFK07pu0V757ZIV8",
+									"name": "Oxygen Storage",
+									"reference": "B49",
+									"local_notes": "Can hold breath 50 times as long as normal",
+									"cost_adj": "-40%",
+									"disabled": true
+								},
+								{
+									"id": "moG_sgbIL7b_g5GOm",
+									"name": "Oxygen Storage",
+									"reference": "B49",
+									"local_notes": "Can hold breath 100 times as long as normal",
+									"cost_adj": "-30%",
+									"disabled": true
+								},
+								{
+									"id": "mNyFh_W-_Jla52l2g",
+									"name": "Oxygen Storage",
+									"reference": "B49",
+									"local_notes": "Can hold breath 200 times as long as normal",
+									"cost_adj": "-20%",
+									"disabled": true
+								},
+								{
+									"id": "mOMrw3du4GCPYOgmj",
+									"name": "Oxygen Storage",
+									"reference": "B49",
+									"local_notes": "Can hold breath 300 times as long as normal",
+									"cost_adj": "-10%",
+									"disabled": true
+								},
+								{
+									"id": "mccQC2pDXnIsJCd70",
+									"name": "Oxygen Combustion",
+									"reference": "B49",
+									"cost_adj": "-50%"
+								}
+							],
+							"base_points": 20,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"calc": {
+						"points": 75
+					}
+				},
+				{
+					"id": "TJX0nfOd4uNJ-dOmg",
+					"name": "Disadvantages",
+					"children": [
+						{
+							"id": "t85b8WxzYOMF7r-1Z",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "tLQKF9eUQ9wM7pDRJ"
+							},
+							"name": "Social Stigma (Valuable Property)",
+							"reference": "B156",
+							"tags": [
+								"Disadvantage",
+								"Social"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "t8zMe8Q2fdQsJ9aKE",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "ttomMvKi4810ACGWk"
+							},
+							"name": "Reprogrammable",
+							"reference": "B150",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Mental"
+							],
+							"base_points": -10,
+							"calc": {
+								"points": -10
+							}
+						},
+						{
+							"id": "tRX6YF_MqHBwN15cq",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t6VlhoSldlKRmJr7i"
+							},
+							"name": "Maintenance",
+							"reference": "B143",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m_IGwynFT_EpUnwKa",
+									"name": "People Required: 1",
+									"reference": "B143",
+									"cost_adj": "-10"
+								},
+								{
+									"id": "mt7YJoeBLle0NlMWP",
+									"name": "People Required: 2",
+									"reference": "B143",
+									"cost_adj": "-20",
+									"disabled": true
+								},
+								{
+									"id": "msPhntoiBzG9lJJZV",
+									"name": "People Required: 3-5",
+									"reference": "B143",
+									"cost_adj": "-30",
+									"disabled": true
+								},
+								{
+									"id": "mq5IIibi2wmIhn_f5",
+									"name": "People Required: 6-10",
+									"reference": "B143",
+									"cost_adj": "-40",
+									"disabled": true
+								},
+								{
+									"id": "m7rHboSa9yqnmfpZf",
+									"name": "People Required: 11-20",
+									"reference": "B143",
+									"cost_adj": "-50",
+									"disabled": true
+								},
+								{
+									"id": "mgV9VU_GP9i0xZDP3",
+									"name": "People Required: 21-50",
+									"reference": "B143",
+									"cost_adj": "-60",
+									"disabled": true
+								},
+								{
+									"id": "msv72_qVDaMmPwhe4",
+									"name": "People Required: 51-100",
+									"reference": "B143",
+									"cost_adj": "-70",
+									"disabled": true
+								},
+								{
+									"id": "mmisa7XwX7kACg-qL",
+									"name": "People Required: 101-200",
+									"reference": "B143",
+									"cost_adj": "-80",
+									"disabled": true
+								},
+								{
+									"id": "mNCcTNaubCN9m1jKl",
+									"name": "People Required: 201-400",
+									"reference": "B143",
+									"cost_adj": "-90",
+									"disabled": true
+								},
+								{
+									"id": "m2BB9VSPdj6DiaLcf",
+									"name": "People Required: 401-800",
+									"reference": "B143",
+									"cost_adj": "-100",
+									"disabled": true
+								},
+								{
+									"id": "mEz5WryWga5d_V2em",
+									"name": "People Required: 801-1600",
+									"reference": "B143",
+									"cost_adj": "-110",
+									"disabled": true
+								},
+								{
+									"id": "m72v5ZDwM_09St_Jo",
+									"name": "People Required: 1601-3200",
+									"reference": "B143",
+									"cost_adj": "-120",
+									"disabled": true
+								},
+								{
+									"id": "mAx5wiyD3NyNaiZ_M",
+									"name": "People Required: 3201-6400",
+									"reference": "B143",
+									"cost_adj": "-130",
+									"disabled": true
+								},
+								{
+									"id": "mvo-ejfMZwACV1Djp",
+									"name": "People Required: 6401-12800",
+									"reference": "B143",
+									"cost_adj": "-140",
+									"disabled": true
+								},
+								{
+									"id": "mkCH30uMfyaXaAP71",
+									"name": "People Required: 12801-25600",
+									"reference": "B143",
+									"cost_adj": "-150",
+									"disabled": true
+								},
+								{
+									"id": "mUYoYAn3F6Ipjxlf_",
+									"name": "Frequency: Monthly",
+									"reference": "B143",
+									"cost_adj": "x0.2",
+									"disabled": true
+								},
+								{
+									"id": "mG6kT5aTe01st05Jo",
+									"name": "Frequency: Bi-weekly",
+									"reference": "B143",
+									"cost_adj": "x0.3333",
+									"disabled": true
+								},
+								{
+									"id": "mslkQYmyDgcz-btGG",
+									"name": "Frequency: Weekly",
+									"reference": "B143",
+									"cost_adj": "x0.5"
+								},
+								{
+									"id": "mQqJUgDq2VX77O5i_",
+									"name": "Frequency: Every other day",
+									"reference": "B143",
+									"cost_adj": "x0.75",
+									"disabled": true
+								},
+								{
+									"id": "m4Tp33-9ngRsW86_E",
+									"name": "Frequency: Daily",
+									"reference": "B143",
+									"cost_adj": "x1",
+									"disabled": true
+								},
+								{
+									"id": "mceXuOohboJ7-h-rr",
+									"name": "Frequency: Twice daily",
+									"reference": "B143",
+									"cost_adj": "x2",
+									"disabled": true
+								},
+								{
+									"id": "m2-xtC1viZeZfbnHr",
+									"name": "Frequency: Three to five times daily",
+									"reference": "B143",
+									"cost_adj": "x3",
+									"disabled": true
+								},
+								{
+									"id": "m0QCpIZxjVHePl_Kk",
+									"name": "Frequency: Constant",
+									"reference": "B143",
+									"cost_adj": "x5",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -5
+							}
+						},
+						{
+							"id": "tAP7onx-_6h32P8dE",
+							"name": "Unhealing (Total)",
+							"reference": "B160",
+							"tags": [
+								"Disadvantage",
+								"Exotic",
+								"Physical"
+							],
+							"base_points": -30,
+							"calc": {
+								"points": -30
+							}
+						},
+						{
+							"id": "tmfykCjpZF_5Q4eR5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set/Basic Set Traits.adq",
+								"id": "t8duh7FJvBdSs4NOb"
+							},
+							"name": "Restricted Diet (Hydrocarbon Fuels)",
+							"reference": "B151",
+							"tags": [
+								"Disadvantage",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mNO98TbsSHapZnFDk",
+									"name": "Substitution",
+									"reference": "B151",
+									"cost_adj": "-50%",
+									"disabled": true
+								},
+								{
+									"id": "mVXem0L3THKEhQ2Ms",
+									"name": "Very Common",
+									"reference": "B151",
+									"cost_adj": "-10"
+								},
+								{
+									"id": "m4J7mI3AHk5xiBv6d",
+									"name": "Common",
+									"reference": "B151",
+									"cost_adj": "-20",
+									"disabled": true
+								},
+								{
+									"id": "mWBhaJe0d6k-_hVGq",
+									"name": "Occasional",
+									"reference": "B151",
+									"cost_adj": "-30",
+									"disabled": true
+								},
+								{
+									"id": "mJiy1-HoC3kh9s09R",
+									"name": "Rare",
+									"reference": "B151",
+									"cost_adj": "-40",
+									"disabled": true
+								}
+							],
+							"calc": {
+								"points": -10
+							}
+						}
+					],
+					"calc": {
+						"points": -65
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		}
+	]
+}
