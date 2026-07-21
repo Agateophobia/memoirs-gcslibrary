@@ -3,12 +3,47 @@
 	"id": "B7DZ1u5Sklnnli-Yj",
 	"traits": [
 		{
-			"id": "TGmr4a-DDVMjZvch0",
+			"id": "ThQGrs-tdG5KjnEpt",
 			"name": "Witch",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "attribute_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_least",
+							"qualifier": 11
+						},
+						"which": "pn"
+					}
+				]
+			},
 			"container_type": "meta_trait",
 			"children": [
 				{
-					"id": "t_O6xwN9EkdL8RorV",
+					"id": "thsZh7wPzLVc9UjPH",
+					"name": "Increased Pneuma",
+					"base_points": -5,
+					"points_per_level": 10,
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"attribute": "pn",
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 5,
+						"current_level": 1
+					}
+				},
+				{
+					"id": "tk6bEjllpy77SeCj9",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -23,14 +58,14 @@
 					],
 					"modifiers": [
 						{
-							"id": "mIBvx0hgNFcN-DdE3",
+							"id": "mz06FagupcUhJgKVj",
 							"name": "Passive Only",
 							"reference": "P69",
 							"cost_adj": "-20%",
 							"disabled": true
 						},
 						{
-							"id": "mA0DVmTndbaJMzruP",
+							"id": "mfmsQrxt4clghs6kQ",
 							"name": "One Event",
 							"reference": "B77",
 							"local_notes": "@Event Type@",
@@ -38,7 +73,7 @@
 							"disabled": true
 						},
 						{
-							"id": "m0xWGIEjbIcdZDwln",
+							"id": "mT-Y-xsAwjPZff8dQ",
 							"name": "Dreaming",
 							"reference": "PSI16",
 							"local_notes": "Combined with Active Only or Can't See Own Death",
@@ -46,34 +81,34 @@
 							"disabled": true
 						},
 						{
-							"id": "mNG16aclXL2X8mVVB",
+							"id": "mVKeTam91MlnMYR0I",
 							"name": "Dreaming",
 							"reference": "PSI16",
 							"cost_adj": "-70%",
 							"disabled": true
 						},
 						{
-							"id": "mLawiT_y22ve5h_F5",
+							"id": "mU-QIkXmzBoFHoCCJ",
 							"name": "Directed",
 							"reference": "P68",
 							"cost_adj": "100%",
 							"disabled": true
 						},
 						{
-							"id": "mSs5o3ODPniCmPaZI",
+							"id": "m16NgNu8UJWMZO_7m",
 							"name": "Can't See Own Death",
 							"reference": "B77",
 							"cost_adj": "-60%",
 							"disabled": true
 						},
 						{
-							"id": "mf7DgrGizPtfvs31Q",
+							"id": "m_7WsACMYWdv0YDJ3",
 							"name": "Pneumological",
-							"local_notes": "Your Pneuma-10 applies to the active use of this trait.",
+							"local_notes": "Use your PN instead of IQ for active use.",
 							"cost_adj": "+20%"
 						},
 						{
-							"id": "m8jtnz23YpBB3iybl",
+							"id": "mrgphvFho6VJvD4iO",
 							"name": "Active Only",
 							"reference": "P69",
 							"cost_adj": "-60%",
@@ -86,7 +121,7 @@
 					}
 				},
 				{
-					"id": "to14HrHlNVllGbaco",
+					"id": "tH9skZeCLq1RlBvYP",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -101,20 +136,20 @@
 					],
 					"modifiers": [
 						{
-							"id": "mlhOQpAPKVtV3bJ2x",
+							"id": "m1lUiKRVd9VckTY7t",
 							"name": "Annoying",
 							"reference": "B148",
 							"cost_adj": "-5",
 							"disabled": true
 						},
 						{
-							"id": "myn4y0uuY3yZ46nZe",
+							"id": "m95IN7aiCiZXk-ars",
 							"name": "Disturbing",
 							"reference": "B148",
 							"cost_adj": "-10"
 						},
 						{
-							"id": "mOg92NlvUuTftznQ1",
+							"id": "mCGn9byffXJlOZrbd",
 							"name": "Diabolical",
 							"reference": "B148",
 							"cost_adj": "-15",
@@ -126,7 +161,7 @@
 					}
 				},
 				{
-					"id": "tCqZwFFnC4SHiyp_y",
+					"id": "t4_Q8TmxphKNrQEE9",
 					"source": {
 						"library": "richardwilkes/gcs_master_library",
 						"path": "Basic Set/Basic Set Traits.adq",
@@ -153,7 +188,7 @@
 				}
 			],
 			"calc": {
-				"points": 15
+				"points": 20
 			}
 		}
 	]
