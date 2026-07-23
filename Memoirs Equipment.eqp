@@ -136,8 +136,8 @@
 							"description": "Thal",
 							"legality_class": "4",
 							"tags": [
-								"Sonnenort Thal",
-								"Money"
+								"Money",
+								"Sonnenort Thal"
 							],
 							"base_value": "3",
 							"quantity": 1,
@@ -154,8 +154,8 @@
 							"description": "Weil",
 							"legality_class": "4",
 							"tags": [
-								"Sonnenort Thal",
-								"Money"
+								"Money",
+								"Sonnenort Thal"
 							],
 							"base_value": "0.25",
 							"quantity": 1,
@@ -879,13 +879,422 @@
 						"weight": "2.2 lb",
 						"extended_weight": "2.2 lb"
 					}
+				},
+				{
+					"id": "ekhEUOZftpaIdYdiQ",
+					"description": "MZ Hrdost, .36 Caplock",
+					"local_notes": "No lanyard ring. Always comes with Styling.",
+					"tech_level": "5",
+					"legality_class": "3",
+					"tags": [
+						"Firearms",
+						"Pistol"
+					],
+					"base_value": "275",
+					"base_weight": "2.5 lb",
+					"weapons": [
+						{
+							"id": "WveRACdzka3RogfRZ",
+							"sv": 1,
+							"damage": {
+								"type": "pi",
+								"base": "1d+2"
+							},
+							"strength": "9",
+							"accuracy": "2",
+							"range": "60/625",
+							"rate_of_fire": "1",
+							"shots": "6(5i)",
+							"bulk": "-2",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Musket"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Machine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Submachine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Gun!"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Grenade Launcher"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Gyroc"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Anti-Armor Weapon"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d+2 pi"
+							}
+						}
+					],
+					"modifiers": [
+						{
+							"id": "fGNQxD-6urV7U5EDW",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "High Tech/High Tech Equipment Modifiers.eqm",
+								"id": "f_ndNuZ49l0QMOrJn"
+							},
+							"name": "Styling",
+							"reference": "HT10",
+							"local_notes": "+1 Reaction",
+							"cost_type": "to_base_cost",
+							"cost": "+1 CF",
+							"disabled": true
+						},
+						{
+							"id": "foLVbQwFg-z6nE8aQ",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "High Tech/High Tech Equipment Modifiers.eqm",
+								"id": "fuE7BPVvasZe0-WhG"
+							},
+							"name": "Styling",
+							"reference": "HT10",
+							"local_notes": "+2 Reaction",
+							"cost_type": "to_base_cost",
+							"cost": "+4 CF",
+							"disabled": true
+						},
+						{
+							"id": "fA1BTEBWb_XcF4arM",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "High Tech/High Tech Equipment Modifiers.eqm",
+								"id": "f6Dp80n37Ssn-YMyX"
+							},
+							"name": "Styling",
+							"reference": "HT10",
+							"local_notes": "+3 Reaction",
+							"cost_type": "to_base_cost",
+							"cost": "+9 CF",
+							"disabled": true
+						},
+						{
+							"id": "fuIl7M9GgFPJV_4Ys",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "High Tech/High Tech Equipment Modifiers.eqm",
+								"id": "fC_V9JV8NpLgf4k1n"
+							},
+							"name": "Fine (Reliable) Quality",
+							"reference": "HT79",
+							"local_notes": "+1 to Malf",
+							"cost_type": "to_base_cost",
+							"cost": "+0.25 CF"
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 343.75,
+						"extended_value": 343.75,
+						"weight": "2.5 lb",
+						"extended_weight": "2.5 lb"
+					}
+				},
+				{
+					"id": "e_AvcEPR9KGwTtFiA",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "High Tech/High Tech Equipment.eqp",
+						"id": "ecDmyuO0InLhnE7qN"
+					},
+					"description": "Dueling Pistol, .45 Flintlock",
+					"local_notes": "Malf 16.",
+					"tech_level": "5",
+					"legality_class": "3",
+					"tags": [
+						"Dueling",
+						"Firearms",
+						"Pistol"
+					],
+					"base_value": "270",
+					"base_weight": "2.75 lb",
+					"weapons": [
+						{
+							"id": "W2ClR9otvbNZeWJZQ",
+							"sv": 1,
+							"damage": {
+								"type": "pi+",
+								"base": "1d+2"
+							},
+							"strength": "9",
+							"accuracy": "1",
+							"range": "70/800",
+							"rate_of_fire": "1",
+							"shots": "1(20)",
+							"bulk": "-3",
+							"recoil": "2",
+							"defaults": [
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									}
+								},
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Pistol"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Rifle"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Musket"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Shotgun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Machine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Submachine Gun"
+									},
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Gun!"
+									}
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Grenade Launcher"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Gyroc"
+									},
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": {
+										"compare": "is",
+										"qualifier": "Guns"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "Light Anti-Armor Weapon"
+									},
+									"modifier": -4
+								}
+							],
+							"calc": {
+								"damage": "1d+2 pi+"
+							}
+						}
+					],
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 270,
+						"extended_value": 270,
+						"weight": "2.75 lb",
+						"extended_weight": "2.75 lb"
+					}
 				}
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 1910,
+				"extended_value": 2523.75,
 				"weight": "0 lb",
-				"extended_weight": "23.7 lb"
+				"extended_weight": "28.95 lb"
 			}
 		},
 		{
@@ -915,6 +1324,25 @@
 					}
 				},
 				{
+					"id": "ewtNiK9BSkwgJW4lC",
+					"description": ".45 Flintlock",
+					"local_notes": "Powder and shot.",
+					"tags": [
+						"Ammunition",
+						"Powder & Shot"
+					],
+					"base_value": "0.2",
+					"base_weight": "0.023 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0.2,
+						"extended_value": 0.2,
+						"weight": "0.023 lb",
+						"extended_weight": "0.023 lb"
+					}
+				},
+				{
 					"id": "eoz4-G1WYt5qvxJhM",
 					"description": ".56 Caplock",
 					"local_notes": "Powder and shot.",
@@ -932,6 +1360,26 @@
 						"extended_value": 0.4,
 						"weight": "0.047 lb",
 						"extended_weight": "0.047 lb"
+					}
+				},
+				{
+					"id": "e5dL0roOGN7cFvdiD",
+					"description": ".36 Caplock",
+					"local_notes": "Powder and shot.",
+					"legality_class": "4",
+					"tags": [
+						"Ammunition",
+						"Powder & Shot"
+					],
+					"base_value": "0.1",
+					"base_weight": "0.013 lb",
+					"quantity": 1,
+					"equipped": true,
+					"calc": {
+						"value": 0.1,
+						"extended_value": 0.1,
+						"weight": "0.013 lb",
+						"extended_weight": "0.013 lb"
 					}
 				},
 				{
@@ -956,9 +1404,9 @@
 			],
 			"calc": {
 				"value": 0,
-				"extended_value": 2.2,
+				"extended_value": 2.5,
 				"weight": "0 lb",
-				"extended_weight": "0.19 lb"
+				"extended_weight": "0.226 lb"
 			}
 		}
 	]
